@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejemplo con Angular.js</title>
+	<!-- Agregar el archivo de Angular.js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	<!-- Agregar el archivo CSS para el diseño responsive -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="myCtrl">
+	<!-- Contenido de la página -->
+	<h1>{{titulo}}</h1>
+	<p>{{texto}}</p>
+
+	<!-- Agregar un formulario con un campo de entrada -->
+	<form>
+		<label>Nombre:</label>
+		<input type="text" ng-model="nombre">
+		<p>{{saludo}}</p>
+	</form>
+
+	<!-- Agregar el código del controlador -->
+	<script>
+		var app = angular.module("myApp", []);
+		app.controller("myCtrl", function($scope) {
+			$scope.titulo = "Ejemplo con Angular.js";
+			$scope.texto = "Este es un ejemplo básico con Angular.js.";
+			$scope.nombre = "";
+			$scope.saludo = "";
+			$scope.$watch("nombre", function() {
+				$scope.saludo = "Hola " + $scope.nombre + "!";
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejemplo con Bootstrap</title>
+	<!-- Enlace al archivo CSS de Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- Estilos personalizados -->
+	<style>
+		/* Estilo para el menú de navegación */
+		.navbar {
+			background-color: #333;
+			color: #fff;
+			font-size: 1.2rem;
+			margin-bottom: 30px;
+		}
+		.navbar-brand {
+			font-weight: bold;
+		}
+		.navbar-nav .nav-item .nav-link {
+			color: #fff;
+			padding: 0.5rem 1rem;
+		}
+		.navbar-nav .nav-item .nav-link:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-md">
+			<a class="navbar-brand" href="#">Mi sitio web</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sección 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sección 2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sección 3</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Sección 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo, mauris vel ultrices mollis, sem neque aliquam lectus, sed interdum lacus turpis in nisl. Vivamus blandit justo at dui commodo feugiat. Aliquam aliquet auctor tellus, ut consequat ex feugiat sit amet. </p>
+			</div>
+			<div class="col-md-4">
+				<h2>Sección 2</h2>
+				<p>Suspendisse vel tortor eu velit commodo pretium. Duis efficit erat non ipsum laoreet, non lacinia metus tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ac tellus dui. Fusce faucibus, quam nec congue finibus, sapien lorem aliquam lectus, sit amet bibendum justo mauris auctor ex. Aliquam erat volutpat. </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Sección 3</h2>
+                <p>Nunc vel suscipit ipsum. Fusce commodo mi at leo congue, nec malesuada enim semper. Fusce in purus lectus. Fusce vitae libero tincidunt, mattis mauris ac, faucibus mauris. Suspendisse sed tristique odio. </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Enlace al archivo JS de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

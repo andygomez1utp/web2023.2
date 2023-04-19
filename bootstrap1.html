@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo de página web con Bootstrap</title>
+	<!-- Enlazamos Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+	<!-- Barra de navegación -->
+	<nav>
+		<div class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Mi sitio web</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Acerca de</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Contenido principal -->
+	<main>
+		<div class="container">
+			<h1>Bienvenidos a mi sitio web</h1>
+			<p>Este es un ejemplo de cómo se puede utilizar Bootstrap para construir un sitio web.</p>
+			<div class="row">
+				<section class="col-md-4">
+					<h3>Sección 1</h3>
+					<p>Contenido de la sección 1</p>
+				</section>
+				<section class="col-md-4">
+					<h3>Sección 2</h3>
+					<p>Contenido de la sección 2</p>
+				</section>
+				<section class="col-md-4">
+					<h3>Sección 3</h3>
+					<p>Contenido de la sección 3</p>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<!-- Enlazamos los archivos JavaScript de Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

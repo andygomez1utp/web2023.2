@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo de página web con Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		/* Estilos personalizados */
+		body {
+			background-color: #f8f9fa;
+			color: #343a40;
+			font-family: 'Helvetica Neue', sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+
+		main {
+			padding: 20px;
+			min-height: calc(100vh - 130px);
+		}
+
+		footer {
+			background-color: #f8f9fa;
+			color: #343a40;
+			padding: 10px;
+			text-align: center;
+		}
+
+		/* Reglas de estilo personalizadas para hacer la página adaptativa */
+		@media only screen and (max-width: 768px) {
+			.col-md-4 {
+				margin-bottom: 20px;
+			}
+		}
+
+		/* Reglas de estilo personalizadas para el menú de navegación */
+		.navbar {
+			background-color: #007bff;
+			color: #fff;
+			margin-bottom: 20px;
+		}
+
+		.navbar-brand {
+			font-weight: bold;
+			font-size: 24px;
+		}
+
+		.nav-link {
+			color: #fff;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand" href="#">Mi página web</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sección 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sección 2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sección 3</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+    
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Sección 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo, mauris vel ultrices mollis, sem neque aliquam lectus, sed interdum lacus turpis in nisl. Vivamus blandit justo at dui commodo feugiat. Aliquam aliquet auctor tellus, ut consequat ex feugiat sit amet. </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Sección 2</h2>
+                <p>Suspendisse vel tortor eu velit commodo pretium. Duis efficitur vel massa sit amet posuere. Fusce eget mi euismod, ultrices diam ac, vehicula risus. Pellentesque vitae odio libero. Sed eu dui vel ipsum aliquam lobortis sed eget nisi. </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Sección 3</h2>
+                <p>Curabitur at odio augue. Nullam interdum, sapien sit amet dapibus pharetra, justo ipsum luctus magna, eu suscipit lorem dolor sed quam. Praesent euismod urna dolor, eget aliquet ante blandit sit amet. Etiam gravida efficitur enim, a fringilla enim cursus sit amet.</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Derechos reservados © 2023</p>
+    </footer>
+    
+    <!-- Scripts de JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
